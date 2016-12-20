@@ -1,0 +1,25 @@
+{
+  "name": "enviante-1k",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "browser": "dist.js",
+  "scripts": {
+    "prepublish": "buble index.js | cjs-wrap enviante1k > dist.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quarterto/enviante-1k.git"
+  },
+  "keywords": [],
+  "author": "Matt Brennan <matt@153.io> (http://blog.153.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/quarterto/enviante-1k/issues"
+  },
+  "homepage": "https://github.com/quarterto/enviante-1k#readme",
+  "devDependencies": {
+    "buble": "^0.15.1",
+    "cjs-wrap": "^1.0.0"
+  }
+}
