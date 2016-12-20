@@ -20,6 +20,6 @@
   "homepage": "https://github.com/quarterto/enviante-1k#readme",
   "devDependencies": {
     "buble": "^0.15.1",
-    "cjs-wrap": "^1.0.0"
+    "cjs-wrap": "^1.1.0"
   }
 }
