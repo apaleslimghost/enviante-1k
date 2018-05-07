@@ -1,13 +1,13 @@
 const h = (tagName, props = {}, ...children) => ({tagName, props, children});
 
-const ConnectedComponent = ({connect, receiver, origProps = {}, child = null}, setProps) => {
+const ConnectedComponent = ({connect, receiver, origProps = {}, child = null}, setProps) => child;
+
+ConnectedComponent.willMount = function() {
 	connect((subscribe, dispatch) => {
-		setProps({
+		this.setProps({
 			child: receiver(origProps, {subscribe, dispatch})
 		});
 	});
-
-	return child;
 };
 
 const createObserve = connect => receiver => origProps => ({
